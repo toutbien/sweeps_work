@@ -12,7 +12,7 @@ from password_utils import hash_password, verify_password
 # Argon2 package hasher
 ph = PasswordHasher()
 
-# Fr this academic proof-of-concept; store the plaintext and hash in memory
+# For this academic proof-of-concept; store the plaintext and hash in memory
 password_plaintext = ""
 password_hash = ""
 verify_attempt = ""
