@@ -22,7 +22,7 @@ verify_result = None
 def get_password():
     global password_plaintext, password_hash
     password_plaintext = password_var.get()
-    password_hash = ph.hash(password_plaintext)
+    password_hash = hash_password(password_plaintext)
     root1.destroy()  # Closes the window after entry
 
 # GUI window
@@ -39,7 +39,7 @@ Button(root1, text="Submit", command=get_password).pack(pady=10)
 root1.mainloop()
 
 # ---test-specific GUI--
-def verify_password():
+def verify_pass():
     global verify_attempt, verify_result
     verify_attempt = verify_var.get()
     try:
@@ -55,7 +55,7 @@ root2.title("Verify Password")
 Label(root2, text="Re-enter your password:").pack(pady=5)
 verify_var = StringVar()
 Entry(root2, textvariable=verify_var, show="*").pack(pady=5)
-Button(root2, text="Verify", command=verify_password).pack(pady=10)
+Button(root2, text="Verify", command=verify_pass).pack(pady=10)
 
 root2.mainloop()
 
