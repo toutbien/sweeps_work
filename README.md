@@ -10,9 +10,14 @@ module4/
 └── requirements.txt         # ← dependencies (like argon2-cffi)
 </code>
 
+
 How to use requirements.txt:
+
 <code> pip install -r requirements.txt</code>
 
+
 Test "module 4" works:
+
 <code>python passhash.py</code>        # runs your GUI
+
 <code>python test_password_utils.py</code>   # runs your unit tests
