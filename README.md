@@ -9,3 +9,6 @@ module4/
 ├── test_password_utils.py   # ← Unit tests for password_utils
 └── requirements.txt         # ← dependencies (like argon2-cffi)
 </code>
+
+How to use requirements.txt:
+pip install -r requirements.txt
