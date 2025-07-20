@@ -1,0 +1,6 @@
+
+│
+├── passhash.py              # ← Your GUI app (Tkinter + logic)
+├── password_utils.py        # ← Core logic (hashing, verifying)
+├── test_password_utils.py   # ← Unit tests for password_utils
+└── requirements.txt         # (Optional) for dependencies like argon2-cffi
