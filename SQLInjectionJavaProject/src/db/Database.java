@@ -9,10 +9,23 @@ public class Database {
             PreparedStatement pstmt = conn.prepareStatement(query);
             pstmt.setString(1, username);
             pstmt.setString(2, password);
+            
+            // Debug output
+            System.out.println("Debug - Username parameter: '" + username + "'");
+            System.out.println("Debug - Password parameter: '" + password + "'");
+            System.out.println("Debug - Prepared query: " + query);
+            
             ResultSet rs = pstmt.executeQuery();
-
-            return rs.next(); // returns true if user found
+            
+            if (rs.next()) {
+                System.out.println("Debug - Found user: " + rs.getString("username"));
+                return true;
+            } else {
+                System.out.println("Debug - No matching user found");
+                return false;
+            }
         } catch (SQLException e) {
+            System.out.println("Debug - SQL Exception: " + e.getMessage());
             e.printStackTrace();
         }
         return false;
