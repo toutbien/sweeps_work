@@ -27,10 +27,10 @@ Test "module 4" works:
 SQLInjectionJavaProject/
 |---- src/
 |---- src/
-| |--- ui/
-| | |--- App.java Main user interface
-| |--- db/
-| | |--- Database.java Vulnerable database logic
+    |--- ui/
+          |--- App.java Main user interface
+    |--- db/
+          |--- Database.java Vulnerable database logic
 |---- Database_FIXED.java Secure version using prepared statements
 </code>
 
