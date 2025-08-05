@@ -1,4 +1,3 @@
-cat > src/db/Database.java << 'EOF'
 package db;
 
 import java.sql.*;
@@ -31,4 +30,3 @@ public class Database {
         }
     }
 }
-EOF

@@ -1,4 +1,3 @@
-cat > src/ui/App.java << 'EOF'
 package ui;
 
 import java.sql.*;
@@ -59,4 +58,3 @@ public class App {
         }
     }
 }
-EOF
