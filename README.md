@@ -22,6 +22,17 @@ Test "module 4" works:
 
 <code>python test_password_utils.py</code>   # runs your unit tests
 
+# module 6
+<code>
+SQLInjectionJavaProject/
+|---- src/
+|---- src/
+| |--- ui/
+| | |--- App.java Main user interface
+| |--- db/
+| | |--- Database.java Vulnerable database logic
+|---- Database_FIXED.java Secure version using prepared statements
+</code>
 
 ### 💡 Troubleshooting
 If you get an error like `ModuleNotFoundError: No module named 'argon2'`:
@@ -30,3 +41,4 @@ Try installing pip (if not present):
 ```bash
 python -m ensurepip --upgrade
 
+============================
