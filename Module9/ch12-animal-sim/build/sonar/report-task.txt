@@ -1,0 +1,6 @@
+projectKey=ch12-animal-sim
+serverUrl=http://localhost:9000
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9000/dashboard?id=ch12-animal-sim
+ceTaskId=a01b516b-5f4b-4b04-bfdf-3b7c525e3b53
+ceTaskUrl=http://localhost:9000/api/ce/task?id=a01b516b-5f4b-4b04-bfdf-3b7c525e3b53
